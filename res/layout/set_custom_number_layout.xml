@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/set_custom_wheel_layout_bg"
+    android:orientation="vertical" >
+
+    <com.techthinker.dreamBuilder.widget.Set_WheelView
+        android:id="@+id/set_custom_number"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="30dip" />
+
+</LinearLayout>

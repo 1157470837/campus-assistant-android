@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- rootview -->
+    <string name="app_name">校园助手</string>
+    <string name="start">校园助手</string>
+    <string name="learn">背单词</string>
+    <string name="test">小试牛刀</string>
+    <string name="notebook">笔记本</string>
+    <string name="history">历史战绩</string>
+    <string name="dictionary">词库管理</string>
+    <string name="setting">设置</string>
+    <string name="help">帮助</string>
+
+    <!-- dictionary -->
+    <string name="dic_installed">已安装</string>
+    <string name="dic_fromsd">从SD卡导入</string>
+    <string name="dic_fromsd_titlebar">所有词库</string>
+    <string name="dic_fromserver">从服务器下载</string>
+    <string name="version">版本</string>
+    <string name="listsNum">单元总数</string>
+    <string name="wordsNum">单词总数</string>
+
+    <!-- dictionary -->
+    <string name="learn_nodic_info">您还没有导入词库</string>
+     <string name="learn_alert_ok">确定</string>
+    
+
+    <!-- setting -->
+    <string name="set_dic">词库设置</string>
+    <string name="set_sys">系统设置</string>
+    <string name="set_dic_shunxu">按字母顺序</string>
+    <string name="set_dic_nixu">按字母逆序</string>
+    <string name="set_dic_luanxu">乱序</string>
+    <string name="set_dic_detail">详情</string>
+    <string name="set_dic_standard">标准计划</string>
+    <string name="set_dic_custom">自定义计划</string>
+    <string name="set_custom_plan_time">计划完成时间?</string>
+    <string name="set_custom_default_FinishedDays">30天</string>
+    <string name="set_custom_start_date">开始日期?</string>
+    <string name="set_custom_default_StartDate">2012/4/1</string>
+    <string name="set_custom_lists_per_day">一天多少个lists?</string>
+    <string name="set_custom_default_ListsPerDay">3个</string>
+    <string name="set_custom_words_per_group">多少个单词一组（用5~10分钟）?</string>
+    <string name="set_custom_default_WordsPerGroup">10个</string>
+    <string name="set_custom_group_per_round">多少组一回（用30~45分钟）?</string>
+    <string name="set_custom_default_GroupsPerRound">6组</string>
+    <string name="set_custom_totalLists">总单元数：</string>
+    <string name="set_custom_TotalWords">总单词数：</string>
+    <string name="set_custom_spinner_noDics">还没有词库！</string>
+    <string name="set_custom_button_ok">设置</string>
+    <string name="set_custom_button_cancle">取消</string>
+    <string name="set_date_picker_dialog_title">日期选择</string>
+    <string name="set_number_picker_dialog_title">数字选择</string>
+
+</resources>
