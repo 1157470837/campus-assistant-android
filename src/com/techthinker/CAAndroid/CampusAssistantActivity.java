@@ -1,8 +1,10 @@
 package com.techthinker.CAAndroid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.techthinker.CAAndroid.Activity.RootViewActivity;
 import com.techthinker.CAAndroid.Database.DatabaseHelper;
 import com.techthinker.CAAndroid.Define.Constant;
 
@@ -18,10 +20,10 @@ public class CampusAssistantActivity extends Activity {
 		dbHelper.close();
 
 		// setContentView(R.layout.start);
-//		Intent toRootView = new Intent();
-//		toRootView.setClass(CampusAssistantActivity.this,
-//				RootViewActivity.class);
-//		startActivity(toRootView);
-//		CampusAssistantActivity.this.finish();
+		Intent toRootView = new Intent();
+		toRootView.setClass(CampusAssistantActivity.this,
+				RootViewActivity.class);
+		startActivity(toRootView);
+		CampusAssistantActivity.this.finish();
 	}
 }

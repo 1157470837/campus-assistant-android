@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/com.techthinker.CAAndroid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <com.techthinker.CAAndroid.widget.Root_Panel
+        android:id="@+id/topPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        panel:animationDuration="1000"
+        panel:closedHandle="@drawable/top_sense_panel"
+        panel:content="@+id/topPanelContent"
+        panel:handle="@+id/topPanelHandle"
+        panel:linearFlying="true"
+        panel:openedHandle="@drawable/top_sense_panel"
+        panel:position="top"
+        panel:weight="100%" 
+        android:layout_marginBottom="4dip">
+
+        <Button
+            android:id="@+id/topPanelHandle"
+            android:layout_width="450dip"
+            android:layout_height="36dip"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/topPanelContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dip"
+                android:text="\nTry to use panels on each side of me. You can click or/and drag them.\n\nEvery panel has its own interpolator\n\nLeft/Right panels are overlayed\n\nKey T toggles top panel&apos;s visibility (without animation)\n\nKey B toggles bottom panel&apos;s visibility (with animation)"
+                android:textColor="#ddd"
+                android:textSize="16dip" />
+
+        </LinearLayout>
+    </com.techthinker.CAAndroid.widget.Root_Panel>
+
+    <com.techthinker.CAAndroid.widget.Root_Panel
+        android:id="@+id/bottomPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        panel:animationDuration="1000"
+        panel:closedHandle="@drawable/bottom_sense_panel"
+        panel:content="@+id/bottomPanelContent"
+        panel:handle="@+id/bottomPanelHandle"
+        panel:openedHandle="@drawable/bottom_sense_panel"
+        panel:position="bottom"
+        panel:weight="100%" 
+        android:layout_marginTop="4dip">
+
+        <Button
+            android:id="@+id/bottomPanelHandle"
+            android:layout_width="450dip"
+            android:layout_height="36dip"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/bottomPanelContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dip"
+                android:text="\nTry to use panels on each side of me. You can click or/and drag them.\n\nEvery panel has its own interpolator\n\nLeft/Right panels are overlayed\n\nKey T toggles top panel&apos;s visibility (without animation)\n\nKey B toggles bottom panel&apos;s visibility (with animation)"
+                android:textColor="#ddd"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </com.techthinker.CAAndroid.widget.Root_Panel>
+
+    <com.techthinker.CAAndroid.widget.Root_Panel
+        android:id="@+id/leftPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        panel:animationDuration="1000"
+        panel:closedHandle="@drawable/left_sense_panel"
+        panel:content="@+id/leftPanelContent"
+        panel:handle="@+id/leftPanelHandle"
+        panel:openedHandle="@drawable/left_sense_panel"
+        panel:position="left"
+        panel:weight="100%" 
+        android:layout_marginRight="4dip">
+
+        <Button
+            android:id="@+id/leftPanelHandle"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/leftPanelContent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dip"
+                android:text="\nTry to use panels on each side of me.\d drag them.\n\nEvery  own interpolator\n\noverlayed\n\nKey T toithout animation)\n\nKey B togglesnimation)"
+                android:textColor="#ddd"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </com.techthinker.CAAndroid.widget.Root_Panel>
+
+    <!--
+			maybe instead of specifying android:layout_gravity and/or
+			optional android:layout_margin* we should introduce top/left
+			padding?
+			
+			e.g. instead of
+		    android:layout_gravity="center"
+			android:layout_marginTop="-110dip"
+			
+			we could write:
+			panel:handlePosition="center:-110dip"
+    -->
+
+    <com.techthinker.CAAndroid.widget.Root_Panel
+        android:id="@+id/rightPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        panel:animationDuration="1000"
+        panel:closedHandle="@drawable/right_sense_panel"
+        panel:content="@+id/rightPanelContent"
+        panel:handle="@+id/rightPanelHandle"
+        panel:linearFlying="true"
+        panel:openedHandle="@drawable/right_sense_panel"
+        panel:position="right"
+        panel:weight="100%" 
+        android:layout_marginLeft="4dip">
+
+        <Button
+            android:id="@+id/rightPanelHandle"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/rightPanelContent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dip"
+                android:text="\nTry to use panels on each side of me. You can click or/and drag them.\n\nEvery panel has its own interpolator\n\nLeft/Right panels are overlayed\n\nKey T toggles top panel&apos;s visibility (without animation)\n\nKey B toggles bottom panel&apos;s visibility (with animation)"
+                android:textColor="#ddd"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </com.techthinker.CAAndroid.widget.Root_Panel>
+
+</FrameLayout>

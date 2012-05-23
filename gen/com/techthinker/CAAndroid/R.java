@@ -29,6 +29,15 @@ containing a value of this type.
 </table>
          */
         public static final int activeType=0x7f010007;
+        /**  Defines panel animation duration in ms. 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int animationDuration=0x7f010008;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -37,6 +46,18 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int centered=0x7f010004;
+        /**  Defines closed handle (drawable/color). 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int closedHandle=0x7f01000f;
+        /**  Identifier for the child that represents the panel's content. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int content=0x7f01000b;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -45,6 +66,11 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int fadeOut=0x7f010005;
+        /**  Identifier for the child that represents the panel's handle. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int handle=0x7f01000a;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -65,6 +91,36 @@ containing a value of this type.
 </table>
          */
         public static final int inactiveType=0x7f010006;
+        /**  Defines if flying gesture forces linear interpolator in animation. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int linearFlying=0x7f01000c;
+        /**  Defines opened handle (drawable/color). 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int openedHandle=0x7f01000e;
+        /**  Defines panel position on the screen. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0</td><td> Panel placed at top of the screen. </td></tr>
+<tr><td><code>bottom</code></td><td>1</td><td> Panel placed at bottom of the screen. </td></tr>
+<tr><td><code>left</code></td><td>2</td><td> Panel placed at left of the screen. </td></tr>
+<tr><td><code>right</code></td><td>3</td><td> Panel placed at right of the screen. </td></tr>
+</table>
+         */
+        public static final int position=0x7f010009;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -83,31 +139,96 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int sidebuffer=0x7f010000;
+        /**  Defines size relative to parent (must be in form: nn%p). 
+         <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int weight=0x7f01000d;
     }
     public static final class color {
         public static final int header=0x7f050000;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int learn_list_item=0x7f020001;
-        public static final int set_custom_wheel_bg=0x7f020002;
-        public static final int set_custom_wheel_layout_bg=0x7f020003;
-        public static final int set_custom_wheel_val=0x7f020004;
+        public static final int background=0x7f020000;
+        public static final int bottom_sense_panel=0x7f020001;
+        public static final int bottom_switcher_collapsed=0x7f020002;
+        public static final int bottom_switcher_collapsed_background=0x7f020003;
+        public static final int bottom_switcher_collapsed_focused=0x7f020004;
+        public static final int bottom_switcher_collapsed_selected=0x7f020005;
+        public static final int bottom_switcher_expanded=0x7f020006;
+        public static final int bottom_switcher_expanded_background=0x7f020007;
+        public static final int bottom_switcher_expanded_focused=0x7f020008;
+        public static final int bottom_switcher_expanded_selected=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int learn_list_item=0x7f02000b;
+        public static final int left_sense_panel=0x7f02000c;
+        public static final int left_switcher_collapsed=0x7f02000d;
+        public static final int left_switcher_collapsed_background=0x7f02000e;
+        public static final int left_switcher_collapsed_focused=0x7f02000f;
+        public static final int left_switcher_collapsed_selected=0x7f020010;
+        public static final int left_switcher_expanded=0x7f020011;
+        public static final int left_switcher_expanded_background=0x7f020012;
+        public static final int left_switcher_expanded_focused=0x7f020013;
+        public static final int left_switcher_expanded_selected=0x7f020014;
+        public static final int right_sense_panel=0x7f020015;
+        public static final int right_switcher_collapsed=0x7f020016;
+        public static final int right_switcher_collapsed_background=0x7f020017;
+        public static final int right_switcher_collapsed_focused=0x7f020018;
+        public static final int right_switcher_collapsed_selected=0x7f020019;
+        public static final int right_switcher_expanded=0x7f02001a;
+        public static final int right_switcher_expanded_background=0x7f02001b;
+        public static final int right_switcher_expanded_focused=0x7f02001c;
+        public static final int right_switcher_expanded_selected=0x7f02001d;
+        public static final int set_custom_wheel_bg=0x7f02001e;
+        public static final int set_custom_wheel_layout_bg=0x7f02001f;
+        public static final int set_custom_wheel_val=0x7f020020;
+        public static final int top_sense_panel=0x7f020021;
+        public static final int top_switcher_collapsed=0x7f020022;
+        public static final int top_switcher_collapsed_background=0x7f020023;
+        public static final int top_switcher_collapsed_focused=0x7f020024;
+        public static final int top_switcher_collapsed_selected=0x7f020025;
+        public static final int top_switcher_expanded=0x7f020026;
+        public static final int top_switcher_expanded_background=0x7f020027;
+        public static final int top_switcher_expanded_focused=0x7f020028;
+        public static final int top_switcher_expanded_selected=0x7f020029;
     }
     public static final class id {
+        public static final int bottom=0x7f040003;
+        public static final int bottomPanel=0x7f040009;
+        public static final int bottomPanelContent=0x7f04000a;
+        public static final int bottomPanelHandle=0x7f04000b;
         public static final int fill=0x7f040001;
-        public static final int set_custom_day=0x7f040005;
-        public static final int set_custom_number=0x7f040002;
+        public static final int left=0x7f040004;
+        public static final int leftPanel=0x7f04000c;
+        public static final int leftPanelContent=0x7f04000d;
+        public static final int leftPanelHandle=0x7f04000e;
+        public static final int right=0x7f040005;
+        public static final int rightPanel=0x7f04000f;
+        public static final int rightPanelContent=0x7f040010;
+        public static final int rightPanelHandle=0x7f040011;
+        public static final int set_custom_day=0x7f040015;
+        public static final int set_custom_number=0x7f040012;
         public static final int stroke=0x7f040000;
-        public static final int text=0x7f040006;
-        public static final int time2_monthday=0x7f040004;
-        public static final int time2_weekday=0x7f040003;
+        public static final int text=0x7f040016;
+        public static final int time2_monthday=0x7f040014;
+        public static final int time2_weekday=0x7f040013;
+        public static final int top=0x7f040002;
+        public static final int topPanel=0x7f040006;
+        public static final int topPanelContent=0x7f040007;
+        public static final int topPanelHandle=0x7f040008;
     }
     public static final class layout {
-        public static final int set_custom_number_layout=0x7f030000;
-        public static final int set_custom_time_day=0x7f030001;
-        public static final int set_custom_time_layout=0x7f030002;
-        public static final int set_custom_wheel_text_item=0x7f030003;
+        public static final int root_panel=0x7f030000;
+        public static final int set_custom_number_layout=0x7f030001;
+        public static final int set_custom_time_day=0x7f030002;
+        public static final int set_custom_time_layout=0x7f030003;
+        public static final int set_custom_wheel_text_item=0x7f030004;
     }
     public static final class string {
         /**  rootview 
@@ -314,6 +435,157 @@ containing a value of this type.
           @attr name android:radius
         */
         public static final int CircleFlowIndicator_radius = 2;
+        /**  panel widget 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Panel_animationDuration com.techthinker.CAAndroid:animationDuration}</code></td><td> Defines panel animation duration in ms.</td></tr>
+           <tr><td><code>{@link #Panel_closedHandle com.techthinker.CAAndroid:closedHandle}</code></td><td> Defines closed handle (drawable/color).</td></tr>
+           <tr><td><code>{@link #Panel_content com.techthinker.CAAndroid:content}</code></td><td> Identifier for the child that represents the panel's content.</td></tr>
+           <tr><td><code>{@link #Panel_handle com.techthinker.CAAndroid:handle}</code></td><td> Identifier for the child that represents the panel's handle.</td></tr>
+           <tr><td><code>{@link #Panel_linearFlying com.techthinker.CAAndroid:linearFlying}</code></td><td> Defines if flying gesture forces linear interpolator in animation.</td></tr>
+           <tr><td><code>{@link #Panel_openedHandle com.techthinker.CAAndroid:openedHandle}</code></td><td> Defines opened handle (drawable/color).</td></tr>
+           <tr><td><code>{@link #Panel_position com.techthinker.CAAndroid:position}</code></td><td> Defines panel position on the screen.</td></tr>
+           <tr><td><code>{@link #Panel_weight com.techthinker.CAAndroid:weight}</code></td><td> Defines size relative to parent (must be in form: nn%p).</td></tr>
+           </table>
+           @see #Panel_animationDuration
+           @see #Panel_closedHandle
+           @see #Panel_content
+           @see #Panel_handle
+           @see #Panel_linearFlying
+           @see #Panel_openedHandle
+           @see #Panel_position
+           @see #Panel_weight
+         */
+        public static final int[] Panel = {
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f
+        };
+        /**
+          <p>
+          @attr description
+           Defines panel animation duration in ms. 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:animationDuration
+        */
+        public static final int Panel_animationDuration = 0;
+        /**
+          <p>
+          @attr description
+           Defines closed handle (drawable/color). 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:closedHandle
+        */
+        public static final int Panel_closedHandle = 7;
+        /**
+          <p>
+          @attr description
+           Identifier for the child that represents the panel's content. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:content
+        */
+        public static final int Panel_content = 3;
+        /**
+          <p>
+          @attr description
+           Identifier for the child that represents the panel's handle. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name android:handle
+        */
+        public static final int Panel_handle = 2;
+        /**
+          <p>
+          @attr description
+           Defines if flying gesture forces linear interpolator in animation. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:linearFlying
+        */
+        public static final int Panel_linearFlying = 4;
+        /**
+          <p>
+          @attr description
+           Defines opened handle (drawable/color). 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:openedHandle
+        */
+        public static final int Panel_openedHandle = 6;
+        /**
+          <p>
+          @attr description
+           Defines panel position on the screen. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0</td><td> Panel placed at top of the screen. </td></tr>
+<tr><td><code>bottom</code></td><td>1</td><td> Panel placed at bottom of the screen. </td></tr>
+<tr><td><code>left</code></td><td>2</td><td> Panel placed at left of the screen. </td></tr>
+<tr><td><code>right</code></td><td>3</td><td> Panel placed at right of the screen. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:position
+        */
+        public static final int Panel_position = 1;
+        /**
+          <p>
+          @attr description
+           Defines size relative to parent (must be in form: nn%p). 
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:weight
+        */
+        public static final int Panel_weight = 5;
         /** Attributes that can be used with a ViewFlow.
            <p>Includes the following attributes:</p>
            <table>
